@@ -3,7 +3,7 @@
 @font-face
 {
     font-family: 'Shrikhand';
-    src: url('/CSS/polices/shrikhand/Shrikhand-Regular.otf');
+    src: url('../polices/shrikhand/Shrikhand-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face
 {
     font-family: 'Roboto';
-    src: url('/CSS/polices/roboto/Roboto-Medium.ttf');
+    src: url('../polices/roboto/Roboto-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,7 @@
 @font-face
 {
     font-family: 'Roboto-light';
-    src: url('/CSS/polices/roboto/Roboto-Light.ttf');
+    src: url('../polices/roboto/Roboto-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -202,6 +202,7 @@ header{
             i{
                 margin: auto;
                 line-height: 23px;
+                color: black;
                 :hover{
                     cursor: pointer;
                 }
