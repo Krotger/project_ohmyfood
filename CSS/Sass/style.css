@@ -294,6 +294,7 @@ header img {
 .bloc_restaurants__title i {
   margin: auto 35px auto auto;
   line-height: inherit;
+  cursor: pointer;
 }
 .bloc_restaurants__menu {
   margin-bottom: 35px;
@@ -305,7 +306,7 @@ header img {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
-.bloc_restaurants__menu--cards {
+.bloc_restaurants__menu .bloc_restaurants__menu--cards1, .bloc_restaurants__menu .bloc_restaurants__menu--cards2, .bloc_restaurants__menu .bloc_restaurants__menu--cards3 {
   display: flex;
   background-color: white;
   border-radius: 15px;
@@ -313,21 +314,21 @@ header img {
   margin: 10px auto 15px auto;
   width: 90%;
 }
-.bloc_restaurants__menu--cards:hover {
+.bloc_restaurants__menu .bloc_restaurants__menu--cards1:hover, .bloc_restaurants__menu .bloc_restaurants__menu--cards2:hover, .bloc_restaurants__menu .bloc_restaurants__menu--cards3:hover {
   cursor: pointer;
   opacity: 0.8;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.bloc_restaurants__menu--cards p {
+.bloc_restaurants__menu .bloc_restaurants__menu--cards1 p, .bloc_restaurants__menu .bloc_restaurants__menu--cards2 p, .bloc_restaurants__menu .bloc_restaurants__menu--cards3 p {
   margin: 35px 3% 0px 4%;
   color: black;
   font: 100 smaller "roboto";
 }
-.bloc_restaurants__menu--cards--text {
+.bloc_restaurants__menu .bloc_restaurants__menu--cards1--text, .bloc_restaurants__menu .bloc_restaurants__menu--cards2--text, .bloc_restaurants__menu .bloc_restaurants__menu--cards3--text {
   width: 90%;
   overflow: hidden;
 }
-.bloc_restaurants__menu--cards--text h3 {
+.bloc_restaurants__menu .bloc_restaurants__menu--cards1--text h3, .bloc_restaurants__menu .bloc_restaurants__menu--cards2--text h3, .bloc_restaurants__menu .bloc_restaurants__menu--cards3--text h3 {
   margin: 10px 0px 5px 4%;
   font-size: initial;
   text-overflow: ellipsis;
@@ -335,7 +336,7 @@ header img {
   overflow: hidden;
   flex: 1;
 }
-.bloc_restaurants__menu--cards--text p {
+.bloc_restaurants__menu .bloc_restaurants__menu--cards1--text p, .bloc_restaurants__menu .bloc_restaurants__menu--cards2--text p, .bloc_restaurants__menu .bloc_restaurants__menu--cards3--text p {
   margin: 5px 0px 10px 4%;
   font: 100 small "roboto-light";
   text-overflow: ellipsis;
@@ -416,10 +417,10 @@ header img {
 }
 
 /*Checkbox */
-.bloc_restaurants__menu--cards:hover .box_valid {
+.bloc_restaurants__menu--cards1:hover .box_valid, .bloc_restaurants__menu--cards2:hover .box_valid, .bloc_restaurants__menu--cards3:hover .box_valid {
   width: 60px;
 }
-.bloc_restaurants__menu--cards:hover .box_valid i {
+.bloc_restaurants__menu--cards1:hover .box_valid i, .bloc_restaurants__menu--cards2:hover .box_valid i, .bloc_restaurants__menu--cards3:hover .box_valid i {
   font-size: x-small;
   padding: 7px 3px;
   transform: rotate(-2turn);
@@ -452,19 +453,49 @@ header img {
 }
 
 /* Menu */
-.bloc_restaurants__menu--cards:nth-child(2) {
+.bloc_restaurants__menu--cards1:nth-child(2) {
   animation: fadeIn 1s linear both;
   animation-delay: 0.5s;
 }
 
-.bloc_restaurants__menu--cards:nth-child(3) {
+.bloc_restaurants__menu--cards1:nth-child(3) {
   animation: fadeIn 1s linear both;
   animation-delay: 0.7s;
 }
 
-.bloc_restaurants__menu--cards:nth-child(4) {
+.bloc_restaurants__menu--cards1:nth-child(4) {
   animation: fadeIn 1s linear both;
   animation-delay: 0.9s;
+}
+
+.bloc_restaurants__menu--cards2:nth-child(2) {
+  animation: fadeIn 1s linear both;
+  animation-delay: 1.1s;
+}
+
+.bloc_restaurants__menu--cards2:nth-child(3) {
+  animation: fadeIn 1s linear both;
+  animation-delay: 1.3s;
+}
+
+.bloc_restaurants__menu--cards2:nth-child(4) {
+  animation: fadeIn 1s linear both;
+  animation-delay: 1.5s;
+}
+
+.bloc_restaurants__menu--cards3:nth-child(2) {
+  animation: fadeIn 1s linear both;
+  animation-delay: 1.7s;
+}
+
+.bloc_restaurants__menu--cards3:nth-child(3) {
+  animation: fadeIn 1s linear both;
+  animation-delay: 1.9s;
+}
+
+.bloc_restaurants__menu--cards3:nth-child(4) {
+  animation: fadeIn 1s linear both;
+  animation-delay: 2.1s;
 }
 
 @media all and (min-width: 768px) {
@@ -511,7 +542,7 @@ header img {
   .bloc_restaurants__menu h2 {
     margin: 30px auto;
   }
-  .bloc_restaurants__menu--cards {
+  .bloc_restaurants__menu .bloc_restaurants__menu--cards1, .bloc_restaurants__menu .bloc_restaurants__menu--cards2, .bloc_restaurants__menu .bloc_restaurants__menu--cards3 {
     width: 60%;
   }
 }
@@ -536,16 +567,11 @@ header img {
     height: 350px;
   }
   .bloc_restaurants__menu {
-    border: 5px dashed #8C8485;
-    border-radius: 40px;
     padding-bottom: 30px;
     margin: 40px 20%;
-    background-color: white;
-    box-shadow: 3px 3px 10px #8c8485;
   }
-  .bloc_restaurants__menu--cards {
+  .bloc_restaurants__menu .bloc_restaurants__menu--cards1, .bloc_restaurants__menu .bloc_restaurants__menu--cards2, .bloc_restaurants__menu .bloc_restaurants__menu--cards3 {
     width: 70%;
-    background-color: rgb(247, 247, 247);
   }
   .bloc_restaurants__title i {
     margin: 45px 85px 30px auto;
