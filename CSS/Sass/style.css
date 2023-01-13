@@ -186,11 +186,17 @@ header img {
 }
 .restaurants__cards--footercards {
   display: flex;
+  position: relative;
 }
 .restaurants__cards--footercards i {
-  margin: auto;
-  line-height: 23px;
+  line-height: 30px;
   color: black;
+  position: absolute;
+  right: 10%;
+  bottom: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 .restaurants__cards--footercards i :hover {
   cursor: pointer;
@@ -292,9 +298,14 @@ header img {
   font: 500 x-large "shrikhand";
 }
 .bloc_restaurants__title i {
-  margin: auto 35px auto auto;
-  line-height: inherit;
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  line-height: 30px;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 .bloc_restaurants__menu {
   margin-bottom: 35px;
@@ -383,10 +394,16 @@ header img {
 }
 @keyframes heart_fadeIn {
   0% {
-    opacity: 0.5;
+    opacity: 0;
+    font-size: 1.5em;
+  }
+  30% {
+    opacity: 0.1;
+    font-size: 1.5em;
   }
   100% {
     opacity: 1;
+    font-size: 1.6em;
   }
 }
 /* Loading Spinner */
@@ -444,6 +461,13 @@ header img {
 }
 
 /* Heart */
+.heart_anim1 {
+  z-index: 0;
+}
+
+.heart_anim {
+  z-index: 1;
+}
 .heart_anim:hover {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -572,9 +596,6 @@ header img {
   }
   .bloc_restaurants__menu .bloc_restaurants__menu--cards1, .bloc_restaurants__menu .bloc_restaurants__menu--cards2, .bloc_restaurants__menu .bloc_restaurants__menu--cards3 {
     width: 70%;
-  }
-  .bloc_restaurants__title i {
-    margin: 45px 85px 30px auto;
   }
 }
 
