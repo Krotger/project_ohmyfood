@@ -294,7 +294,6 @@ header{
         position: relative;
         margin-top: -40px;
         z-index: 1;
-        border: 1px solid #f2f2f2;
         background-color: rgb(247 247 247);
         border-radius: 35px 35px 0px 0px;
         width: 100%;
@@ -391,7 +390,7 @@ header{
 @keyframes fadeIn {
     0% {opacity: 0;visibility: hidden;}
     15% {opacity: 0;visibility: hidden;}
-    100% {opacity: 1;visibility: visible;}
+    100% {opacity: 1;visibility: visible;transform: translateY(-15px);}
 }
 
 @keyframes heart_fadeIn {
@@ -483,6 +482,7 @@ transition: font-size 200ms, transform 1s;
 .bloc_restaurants__menu--cards1:nth-child(2){
     animation: fadeIn 1s linear both;
     animation-delay: 0.5s;
+    
 }
 .bloc_restaurants__menu--cards1:nth-child(3){
     animation: fadeIn 1s linear both;

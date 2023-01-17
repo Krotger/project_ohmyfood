@@ -276,7 +276,6 @@ header img {
   position: relative;
   margin-top: -40px;
   z-index: 1;
-  border: 1px solid #f2f2f2;
   background-color: rgb(247, 247, 247);
   border-radius: 35px 35px 0px 0px;
   width: 100%;
@@ -390,6 +389,7 @@ header img {
   100% {
     opacity: 1;
     visibility: visible;
+    transform: translateY(-15px);
   }
 }
 @keyframes heart_fadeIn {
